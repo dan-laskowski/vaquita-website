@@ -1,23 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import { Heading, Subheading } from "../atoms/headings";
-import Button from "../atoms/button";
 
 const StyledSection = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: ${({ light, theme }) =>
-    light ? theme.color.offWhite : theme.color.navy};
-  height: 70vh;
-  min-height: 640px;
+  background: ${({ background }) => background};
+  height: 100vh;
+  min-height: 940px;
 `;
 
-const PageSection = ({ children, id, heading, paragraph, light }) => {
+const PageSection = ({
+  section: { background, name, color, heading, paragraph },
+  children,
+}) => {
   return (
-    <StyledSection light={light} id={id}>
-      <Heading light={light}>{heading}</Heading>
-      <Subheading light={light}>{paragraph}</Subheading>
+    <StyledSection id={name} key={name} background={background}>
+      <Heading color={color}>{heading}</Heading>
+      {paragraph && <Subheading color={color}>{paragraph}</Subheading>}
       {children}
     </StyledSection>
   );

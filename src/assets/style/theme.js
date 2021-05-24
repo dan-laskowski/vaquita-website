@@ -3,7 +3,7 @@ const theme = {
     navy: `#222151`,
     orange: `#f5ad45`,
     offWhite: `#f4f9f9`,
-    lightBlue: `#30A9D9`,
+    lightBlue: `#2d82b7`,
   },
   font: {
     family: {
@@ -14,12 +14,14 @@ const theme = {
       m: `2.4rem`,
       xxl: `8.2rem`,
     },
+    lineHeight: {
+      m: `3rem`,
+      xxl: `7.2rem`,
+    },
     weight: {
       regular: `400`,
+      bold: `700`,
       black: `900`,
-    },
-    line: {
-      xxl: `7.2rem`,
     },
   },
 };
