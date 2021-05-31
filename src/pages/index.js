@@ -5,15 +5,12 @@ import Layout from "../components/layout";
 import PageSection from "../components/organisms/pageSection";
 import pageContent from "../data/pageContent";
 import CTAButton from "../components/atoms/button";
+import Timeline from "../components/organisms/timeline";
+import FaqBox from "../components/organisms/FaqBox";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query PicturesQuery {
-      hero: file(name: { in: "hero" }) {
-        childImageSharp {
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-        }
-      }
       app: file(name: { in: "app" }) {
         childImageSharp {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
@@ -24,15 +21,16 @@ const IndexPage = () => {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
         }
       }
+      vision: file(name: { in: "vision" }) {
+        childImageSharp {
+          gatsbyImageData(placeholder: NONE, formats: [AUTO, WEBP, AVIF])
+        }
+      }
     }
   `);
   return (
     <Layout>
       <PageSection section={pageContent.hero}>
-        <GatsbyImage
-          image={data.hero.childImageSharp.gatsbyImageData}
-          alt="hand with the planet"
-        />
         <CTAButton>
           Show me <span>⤳</span>
         </CTAButton>
@@ -49,6 +47,7 @@ const IndexPage = () => {
           <GatsbyImage
             image={data.solution.childImageSharp.gatsbyImageData}
             alt="water sensors"
+            loading="eager"
           />
           <ol>
             {pageContent.solution.features.map(feature => (
@@ -64,14 +63,41 @@ const IndexPage = () => {
             alt="person with a computer on a table"
           />
           <ul>
-            <li>Full station integration made with one click</li>
-            <li>Simple to operate </li>
-            <li>Available on your mobile device (iOS and Android)</li>
-            <li>Affordable licensing for everyone</li>
+            {pageContent.app.features.map(feature => (
+              <li>
+                <h2>feature.heading</h2>
+                <p>feature.paragraph</p>
+              </li>
+            ))}
           </ul>
         </section>
       </PageSection>
-      <PageSection section={pageContent.vision}></PageSection>
+      <PageSection section={pageContent.vision}>
+        <section className="horizontal">
+          <GatsbyImage
+            image={data.vision.childImageSharp.gatsbyImageData}
+            alt="hand with the planet"
+          />
+        </section>
+      </PageSection>
+      <PageSection section={pageContent.team}></PageSection>
+      <PageSection section={pageContent.achievements}>
+        <Timeline achievements={pageContent.achievements.achievements} />
+      </PageSection>
+      <PageSection section={pageContent.faq}>
+        <section className="horizontal">
+          <lottie-player
+            src="https://assets6.lottiefiles.com/packages/lf20_G5TBf4.json"
+            background="transparent"
+            speed="1"
+            style={{ width: "600px", height: "600px" }}
+            loop
+            autoplay
+          />
+          <FaqBox faq={pageContent.faq.faq} />
+        </section>
+      </PageSection>
+      <PageSection section={pageContent.contact}></PageSection>
     </Layout>
   );
 };

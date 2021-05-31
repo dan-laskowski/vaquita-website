@@ -8,8 +8,7 @@ const StyledSection = styled.section`
   justify-content: center;
   align-items: center;
   background: ${({ background }) => background};
-  height: 100vh;
-  min-height: 940px;
+  min-height: 100vh;
 `;
 
 const PageSection = ({
