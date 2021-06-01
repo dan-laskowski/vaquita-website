@@ -5,10 +5,11 @@ import Layout from "../components/layout";
 import MainSection from "../components/organisms/mainSection";
 import PageSection from "../components/organisms/pageSection";
 import pageContent from "../data/pageContent";
+import Member from "../components/molecules/member";
 import FeatureBox from "../components/organisms/featureBox";
 import Timeline from "../components/organisms/timeline";
 import FaqBox from "../components/organisms/FaqBox";
-import Member from "../components/molecules/member";
+import ContactForm from "../components/organisms/contactForm";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -156,7 +157,9 @@ const IndexPage = () => {
           <FaqBox faq={pageContent.faq.faq} />
         </section>
       </PageSection>
-      <PageSection section={pageContent.contact}></PageSection>
+      <PageSection section={pageContent.contact}>
+        <ContactForm />
+      </PageSection>
     </Layout>
   );
 };
