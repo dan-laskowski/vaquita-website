@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { Helmet } from "react-helmet";
 import GlobalStyle from "../assets/style/globalStyle";
 import theme from "../assets/style/theme";
-import Header from "./header";
+import Header from "../components/organisms/header";
 import Footer from "./footer";
 import Seo from "./seo";
 

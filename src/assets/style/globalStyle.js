@@ -19,10 +19,47 @@ body {
   background:${({ theme }) => theme.color.lightBlue};
 }
 
+ul li h2, ul li p, ul li::marker {
+  color: ${({ theme }) => theme.color.lightBlue};
+}
+
+#solution {
+  h1 {
+    margin-top:0;
+  }
+}
+
+#achievements {
+  h1 {
+    margin-bottom: 22rem;
+  }
+}
+
+#app {
+  h1 {
+    font-size:4.6rem;
+    text-align:center;
+  }
+}
+
+
+
+
 .horizontal {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.horizontal > * {
+  margin:4rem;
+}
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:6rem;
+  max-width:1200px;
 }
 /* The actual timeline (the vertical ruler) */
 .timeline {

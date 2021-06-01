@@ -12,11 +12,11 @@ const theme = {
     },
     size: {
       m: `2.4rem`,
-      xxl: `8.2rem`,
+      xxl: `7.2rem`,
     },
     lineHeight: {
       m: `3rem`,
-      xxl: `7.2rem`,
+      xxl: `6.6rem`,
     },
     weight: {
       regular: `400`,

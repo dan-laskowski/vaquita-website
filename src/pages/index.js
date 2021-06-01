@@ -2,15 +2,22 @@ import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
+import MainSection from "../components/organisms/mainSection";
 import PageSection from "../components/organisms/pageSection";
 import pageContent from "../data/pageContent";
-import CTAButton from "../components/atoms/button";
+import FeatureBox from "../components/organisms/featureBox";
 import Timeline from "../components/organisms/timeline";
 import FaqBox from "../components/organisms/FaqBox";
+import Member from "../components/molecules/member";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query PicturesQuery {
+      hero: file(name: { in: "hero" }) {
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+        }
+      }
       app: file(name: { in: "app" }) {
         childImageSharp {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
@@ -19,6 +26,42 @@ const IndexPage = () => {
       solution: file(name: { in: "solution" }) {
         childImageSharp {
           gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+        }
+      }
+      nour: file(name: { in: "nour" }) {
+        childImageSharp {
+          gatsbyImageData(
+            width: 260
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
+      }
+      emilio: file(name: { in: "emilio" }) {
+        childImageSharp {
+          gatsbyImageData(
+            width: 260
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
+      }
+      vijaya: file(name: { in: "vijaya" }) {
+        childImageSharp {
+          gatsbyImageData(
+            width: 260
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
+      }
+      dominik: file(name: { in: "dominik" }) {
+        childImageSharp {
+          gatsbyImageData(
+            width: 260
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
         }
       }
       vision: file(name: { in: "vision" }) {
@@ -30,11 +73,10 @@ const IndexPage = () => {
   `);
   return (
     <Layout>
-      <PageSection section={pageContent.hero}>
-        <CTAButton>
-          Show me <span>⤳</span>
-        </CTAButton>
-      </PageSection>
+      <MainSection
+        section={pageContent.hero}
+        image={data.hero.childImageSharp.gatsbyImageData}
+      />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#222151"
@@ -47,32 +89,26 @@ const IndexPage = () => {
           <GatsbyImage
             image={data.solution.childImageSharp.gatsbyImageData}
             alt="water sensors"
-            loading="eager"
           />
           <ol>
-            {pageContent.solution.features.map(feature => (
-              <li>{feature}</li>
-            ))}
+            <FeatureBox features={pageContent.solution.features} />
           </ol>
         </section>
       </PageSection>
       <PageSection section={pageContent.app}>
         <section className="horizontal">
-          <GatsbyImage
-            image={data.app.childImageSharp.gatsbyImageData}
-            alt="person with a computer on a table"
-          />
+          <div className="image">
+            <GatsbyImage
+              image={data.app.childImageSharp.gatsbyImageData}
+              alt="person with a computer on a table"
+            />
+          </div>
           <ul>
-            {pageContent.app.features.map(feature => (
-              <li>
-                <h2>feature.heading</h2>
-                <p>feature.paragraph</p>
-              </li>
-            ))}
+            <FeatureBox features={pageContent.app.features} />
           </ul>
         </section>
       </PageSection>
-      <PageSection section={pageContent.vision}>
+      <PageSection section={pageContent.vision} center>
         <section className="horizontal">
           <GatsbyImage
             image={data.vision.childImageSharp.gatsbyImageData}
@@ -80,7 +116,30 @@ const IndexPage = () => {
           />
         </section>
       </PageSection>
-      <PageSection section={pageContent.team}></PageSection>
+      <PageSection section={pageContent.team}>
+        <div className="members">
+          <Member
+            image={data.emilio.childImageSharp.gatsbyImageData}
+            member={pageContent.team.members[0]}
+          />
+          <Member
+            image={data.nour.childImageSharp.gatsbyImageData}
+            member={pageContent.team.members[1]}
+          />
+          <Member
+            image={data.vijaya.childImageSharp.gatsbyImageData}
+            member={pageContent.team.members[2]}
+          />
+          <Member
+            image={data.dominik.childImageSharp.gatsbyImageData}
+            member={pageContent.team.members[3]}
+          />
+          <Member
+            image={data.vijaya.childImageSharp.gatsbyImageData}
+            member={pageContent.team.members[4]}
+          />
+        </div>
+      </PageSection>
       <PageSection section={pageContent.achievements}>
         <Timeline achievements={pageContent.achievements.achievements} />
       </PageSection>

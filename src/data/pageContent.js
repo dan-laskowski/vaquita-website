@@ -4,7 +4,10 @@ import theme from "../assets/style/theme";
 const pageContent = {
   hero: {
     name: `hero`,
-    heading: [<span>water</span>, "quality measured by technology of tommorow"],
+    heading: [
+      <span>water</span>,
+      " quality measured by technology of tommorow",
+    ],
     paragraph: `We developed water quality monitoring system that predicts what will happen in the environment. It is your chance to finally stay proactive to changes in the environment. Interested? Sign up to our beta program and learn more! `,
     background: theme.color.navy,
     color: theme.color.offWhite,
@@ -15,49 +18,49 @@ const pageContent = {
     paragraph: `Learn more about our system developed with newest technology available on the market.`,
     background: theme.color.lightBlue,
     color: theme.color.offWhite,
-    features: {
-      feature1: {
+    features: [
+      {
         heading: `Custom parameters`,
         paragraph: `We adjust the parameters in the station, based on the client’s needs and feedback.`,
       },
-      feature2: {
+      {
         heading: `Optical sensor technology`,
         paragraph: `Our sensors react to changes in the environment with a delay of less than 0.1 second.`,
       },
-      feature3: {
+      {
         heading: `Deployable everywhere`,
         paragraph: `Due to the use of renewables our stations can be powered even in far remote areas.`,
       },
-      feature4: {
+      {
         heading: `Visual pollution free`,
         paragraph: `Sustainable masking technology let us blend our station in the environment so it does not disturb the wildlife.`,
       },
-    },
+    ],
   },
   app: {
     name: `app`,
     heading: `Data Analysis & Forecasting Platform`,
     paragraph: ``,
     background: theme.color.offWhite,
-    color: theme.color.navy,
-    features: {
-      feature1: {
+    color: theme.color.lightBlue,
+    features: [
+      {
         heading: `Full station integration made with one click`,
         paragraph: `Log in via our website to your account, and access all your water quality data.`,
       },
-      feature2: {
+      {
         heading: `Simple to operate`,
         paragraph: `Our platform can be used by both experienced professionals and individuals that just started their journey with water quality.`,
       },
-      feature3: {
+      {
         heading: `Available on your desktop and mobile device (iOS and Android)`,
         paragraph: `Log in from any platform you want.`,
       },
-      feature4: {
+      {
         heading: `Affordable licensing for everyone`,
         paragraph: `We offer both individual and group licenses depending on your needs!`,
       },
-    },
+    ],
   },
   vision: {
     name: `vision`,
@@ -69,63 +72,63 @@ const pageContent = {
   howItWorks: {
     name: `howItWorks`,
     heading: ``,
-    steps: {
-      step1: {
+    steps: [
+      {
         heading: `Place a station in a water reservoir`,
         paragraph: `Make sure the station is fully submerged`,
       },
-      step2: {
+      {
         heading: `Connect the station to the web `,
         paragraph: `Wait for the light to turn green to indicate you successfully connected to the local network`,
       },
-      step3: {
+      {
         heading: `Log in to our software platform `,
         paragraph: `Verify if you can see the station on your dashboard`,
       },
-      step4: {
+      {
         heading: `Set notifications and enjoy! `,
         paragraph: `In the settings menu choose an option how often would you like to receive alerts`,
       },
-    },
+    ],
   },
   team: {
     name: `team`,
     heading: `Meet our team`,
-    paragraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.`,
+    paragraph: ``,
     background: theme.color.offWhite,
     color: theme.color.navy,
-    members: {
-      member1: {
+    members: [
+      {
         name: `Emilio Asensi`,
         position: `CEO`,
         title: `MSc in`,
       },
-      member2: {
+      {
         name: `Nour Akel`,
         position: `Technical Lead`,
         title: `MSc in`,
       },
-      member3: {
+      {
         name: `Vijaya Sekhar`,
         position: `Software Lead`,
         title: `PhD in`,
       },
-      member4: {
+      {
         name: `Dominik Wudarczyk`,
         position: `HR Lead`,
         title: `MSc in Entrepreneurship and Innovation`,
       },
-      member5: {
+      {
         name: `Mysterious Stranger`,
         position: `CEO`,
         title: `Check available opportunities and join our team!`,
       },
-    },
+    ],
   },
   achievements: {
     name: `achievements`,
-    heading: "What we have achieved?",
-    paragraph: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.`,
+    heading: `What we have achieved?`,
+    paragraph: ``,
     background: theme.color.orange,
     color: theme.color.navy,
     achievements: [
@@ -189,9 +192,9 @@ const pageContent = {
   contact: {
     name: `contact`,
     heading: "Contact us",
-    paragraph: `Lorem ipsum dolor sit amet, consectetur adipiscing.`,
+    paragraph: ``,
     background: theme.color.lightBlue,
-    color: theme.color.orange,
+    color: theme.color.offWhite,
   },
 };
 

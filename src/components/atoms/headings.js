@@ -7,7 +7,8 @@ const StyledHeading = styled.h1`
   line-height: ${({ theme }) => theme.font.lineHeight.xxl};
   font-size: ${({ theme }) => theme.font.size.xxl};
   text-transform: uppercase;
-  max-width: 760px;
+  max-width: 1120px;
+  margin-top: 6vh;
   margin-bottom: 24px;
   color: ${({ color }) => color};
   span {

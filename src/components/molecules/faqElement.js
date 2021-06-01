@@ -7,6 +7,7 @@ const StyledWrapper = styled.div`
   max-width: 560px;
   cursor: pointer;
   width: 100%;
+  color: ${({ theme }) => theme.color.navy};
   border: 1px solid ${({ theme }) => theme.color.navy};
   border-radius: 5px;
   margin-bottom: 24px;
@@ -22,14 +23,19 @@ const StyledIcon = styled.p`
   align-self: center;
   cursor: pointer;
   margin-right: 10px;
+  font-size: 34px;
 `;
 
 const StyledQuestion = styled.h2`
-  margin: 10px 6px 4px 10px;
+  font-family: ${({ theme }) => theme.font.family.primary};
+  font-size: 2rem;
+  margin: 18px 6px 12px 10px;
   user-select: none;
 `;
 const StyledAnswer = styled.h2`
-  margin: 0px 10px 10px 10px;
+  font-family: ${({ theme }) => theme.font.family.secondary};
+  font-size: 1.4rem;
+  margin: 0px 10px 18px 11px;
   user-select: none;
 `;
 

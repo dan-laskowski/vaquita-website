@@ -5,18 +5,20 @@ import { Heading, Subheading } from "../atoms/headings";
 const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: ${({ center }) => (center ? `center` : `unset`)};
   align-items: center;
   background: ${({ background }) => background};
   min-height: 100vh;
+  padding: 10rem;
 `;
 
 const PageSection = ({
   section: { background, name, color, heading, paragraph },
   children,
+  center,
 }) => {
   return (
-    <StyledSection id={name} key={name} background={background}>
+    <StyledSection center={center} id={name} key={name} background={background}>
       <Heading color={color}>{heading}</Heading>
       {paragraph && <Subheading color={color}>{paragraph}</Subheading>}
       {children}
