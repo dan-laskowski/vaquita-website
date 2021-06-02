@@ -47,12 +47,14 @@ const ContactForm = () => {
         type="text"
         placeholder="Name"
         name="from_name"
+        maxLength="100"
         required
       />
       <Input
         aria-label="email"
         type="email"
         placeholder="Email"
+        maxLength="100"
         name="reply_to"
         required
       />
@@ -60,6 +62,7 @@ const ContactForm = () => {
         aria-label="message"
         placeholder="Message"
         name="message"
+        maxLength="500"
         required
       />
       <StyledButton type="submit" value="Send">
