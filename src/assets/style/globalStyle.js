@@ -42,9 +42,6 @@ ul li h2, ul li p, ul li::marker {
   }
 }
 
-
-
-
 .horizontal {
   display: flex;
   flex-direction: row;
@@ -60,6 +57,11 @@ ul li h2, ul li p, ul li::marker {
   justify-content: center;
   margin-top:6rem;
   max-width:1200px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
 }
 /* The actual timeline (the vertical ruler) */
 .timeline {

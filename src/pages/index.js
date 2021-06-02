@@ -6,6 +6,7 @@ import MainSection from "../components/organisms/mainSection";
 import PageSection from "../components/organisms/pageSection";
 import pageContent from "../data/pageContent";
 import Member from "../components/molecules/member";
+import Step from "../components/molecules/step";
 import FeatureBox from "../components/organisms/featureBox";
 import Timeline from "../components/organisms/timeline";
 import FaqBox from "../components/organisms/FaqBox";
@@ -109,7 +110,26 @@ const IndexPage = () => {
           </ul>
         </section>
       </PageSection>
-      <PageSection section={pageContent.howItWorks}></PageSection>
+      <PageSection section={pageContent.howItWorks}>
+        <div className="steps">
+          <Step
+            step={pageContent.howItWorks.steps[0]}
+            image={data.vijaya.childImageSharp.gatsbyImageData}
+          />
+          <Step
+            step={pageContent.howItWorks.steps[1]}
+            image={data.vijaya.childImageSharp.gatsbyImageData}
+          />
+          <Step
+            step={pageContent.howItWorks.steps[2]}
+            image={data.vijaya.childImageSharp.gatsbyImageData}
+          />
+          <Step
+            step={pageContent.howItWorks.steps[3]}
+            image={data.vijaya.childImageSharp.gatsbyImageData}
+          />
+        </div>
+      </PageSection>
       <PageSection section={pageContent.vision} center>
         <section className="horizontal">
           <GatsbyImage
