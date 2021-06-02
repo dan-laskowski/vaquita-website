@@ -9,7 +9,7 @@ import Member from "../components/molecules/member";
 import FeatureBox from "../components/organisms/featureBox";
 import Timeline from "../components/organisms/timeline";
 import FaqBox from "../components/organisms/FaqBox";
-import ContactForm from "../components/organisms/contactForm";
+import ContactSection from "../components/organisms/contactSection";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -157,9 +157,7 @@ const IndexPage = () => {
           <FaqBox faq={pageContent.faq.faq} />
         </section>
       </PageSection>
-      <PageSection section={pageContent.contact}>
-        <ContactForm />
-      </PageSection>
+      <ContactSection section={pageContent.contact} />
     </Layout>
   );
 };

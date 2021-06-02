@@ -3,12 +3,20 @@ import styled from "styled-components";
 import Input from "../atoms/input";
 import emailjs from "emailjs-com";
 import Button from "../atoms/button";
+import TextArea from "../atoms/textArea";
 
-const StyledForm = styled.form``;
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+`;
 
-const StyledTextArea = styled.textarea``;
+const StyledTextArea = styled(TextArea)``;
 
-const StyledButton = styled.button``;
+const StyledButton = styled(Button)`
+  min-width: 320px;
+  margin-right: 0;
+`;
 
 const ContactForm = () => {
   const [submitText, setSubmitText] = useState("Send us a message");
