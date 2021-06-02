@@ -10,6 +10,9 @@ const StyledSection = styled.section`
   background: ${({ background }) => background};
   min-height: 100vh;
   padding: 10rem;
+  h1 {
+    text-transform: none;
+  }
 `;
 
 const PageSection = ({

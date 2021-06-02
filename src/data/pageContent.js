@@ -71,7 +71,10 @@ const pageContent = {
   },
   howItWorks: {
     name: `howItWorks`,
-    heading: ``,
+    heading: `How it works`,
+    paragraph: ``,
+    background: theme.color.lightBlue,
+    color: theme.color.offWhite,
     steps: [
       {
         heading: `Place a station in a water reservoir`,
@@ -192,7 +195,7 @@ const pageContent = {
   contact: {
     name: `contact`,
     heading: "Contact us",
-    paragraph: ``,
+    paragraph: `For more information sign up with us here`,
     background: theme.color.lightBlue,
     color: theme.color.offWhite,
   },

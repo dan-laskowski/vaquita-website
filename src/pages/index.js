@@ -109,6 +109,7 @@ const IndexPage = () => {
           </ul>
         </section>
       </PageSection>
+      <PageSection section={pageContent.howItWorks}></PageSection>
       <PageSection section={pageContent.vision} center>
         <section className="horizontal">
           <GatsbyImage

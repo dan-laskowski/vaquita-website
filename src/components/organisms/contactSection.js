@@ -17,7 +17,10 @@ const StyledSection = styled.section`
     justify-content: center;
     align-items: center;
     h1 {
-      margin-bottom: 46px;
+      text-transform: none;
+    }
+    h2 {
+      margin-bottom: 76px;
     }
   }
 `;
