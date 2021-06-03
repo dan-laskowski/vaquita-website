@@ -7,7 +7,7 @@ import PageSection from "../components/organisms/pageSection";
 import pageContent from "../data/pageContent";
 import Member from "../components/molecules/member";
 import Step from "../components/molecules/step";
-import FeatureBox from "../components/organisms/featureBox";
+import Feature from "../components/molecules/feature";
 import Timeline from "../components/organisms/timeline";
 import FaqBox from "../components/organisms/FaqBox";
 import ContactSection from "../components/organisms/contactSection";
@@ -92,22 +92,50 @@ const IndexPage = () => {
             image={data.solution.childImageSharp.gatsbyImageData}
             alt="water sensors"
           />
-          <ol>
-            <FeatureBox features={pageContent.solution.features} />
-          </ol>
+          <div className="features"></div>
         </section>
       </PageSection>
       <PageSection section={pageContent.app}>
         <section className="horizontal">
+          <div className="features">
+            <Feature feature={pageContent.app.features[0]}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12.537 2.592l-5.445 3.779c-1.504 1.043-1.877 3.108-.833 4.611l5.668 8.168c1.287 1.855 3.352 2.85 5.451 2.85 3.605 0 6.622-2.919 6.622-6.634 0-1.304-.384-2.621-1.182-3.773l-5.668-8.168c-.644-.927-1.676-1.425-2.726-1.425-.652 0-1.311.192-1.887.592zm.945 1.361c.751-.521 1.784-.334 2.307.416l1.415 2.042-3.912 2.693-2.36-3.403 2.55-1.748zm6.725 15.503c-2.252 1.563-5.356 1.002-6.919-1.25l-3.306-4.764 8.167-5.668 3.308 4.764c1.562 2.252 1.001 5.355-1.25 6.918zm-16.031-11.567l-2.499-1.74.62-.891 2.271 1.582c-.169.332-.3.681-.392 1.049zm.702 4.006l-2.299 1.615-.624-.888 2.414-1.699c.135.338.299.665.509.972zm-.778-1.906h-3.1v-1.085h3.029c-.013.366.005.729.071 1.085z" />
+              </svg>
+            </Feature>
+            <Feature feature={pageContent.app.features[2]}>
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path d="M22 10h-1v-2h-11v13h5v1.617c0 .524.121 1.058.502 1.383h-5.002c-.398 0-.779-.158-1.061-.439-.281-.282-.439-.663-.439-1.061v-15c0-.398.158-.779.439-1.061.282-.281.663-.439 1.061-.439h10c.398 0 .779.158 1.061.439.281.282.439.663.439 1.061v2.5zm2 2.25c0-.69-.56-1.25-1.25-1.25h-5.5c-.69 0-1.25.56-1.25 1.25v10.5c0 .69.56 1.25 1.25 1.25h5.5c.69 0 1.25-.56 1.25-1.25v-10.5zm-15.407 11.75h-6.593l2.599-3h3.401v1.804c0 .579.337 1.09.593 1.196zm11.407-1c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm3-3v-6.024h-6v6.024h6zm-2-15h-2v-3h-17v15h6v2h-8v-19h21v5zm-.5 7h-1c-.276 0-.5.224-.5.5s.224.5.5.5h1c.275 0 .5-.224.5-.5s-.225-.5-.5-.5z" />
+              </svg>
+            </Feature>
+            <Feature feature={pageContent.app.features[3]}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4 14.083c0-2.145-2.232-2.742-3.943-3.546-1.039-.54-.908-1.829.581-1.916.826-.05 1.675.195 2.443.465l.362-1.647c-.907-.276-1.719-.402-2.443-.421v-1.018h-1v1.067c-1.945.267-2.984 1.487-2.984 2.85 0 2.438 2.847 2.81 3.778 3.243 1.27.568 1.035 1.75-.114 2.011-.997.226-2.269-.168-3.225-.54l-.455 1.644c.894.462 1.965.708 3 .727v.998h1v-1.053c1.657-.232 3.002-1.146 3-2.864z" />
+              </svg>
+            </Feature>
+          </div>
           <div className="image">
             <GatsbyImage
               image={data.app.childImageSharp.gatsbyImageData}
               alt="person with a computer on a table"
             />
           </div>
-          <ul>
-            <FeatureBox features={pageContent.app.features} />
-          </ul>
         </section>
       </PageSection>
       <PageSection section={pageContent.howItWorks}>

@@ -5,8 +5,9 @@ import { Heading, Subheading } from "../atoms/headings";
 const StyledWrapper = styled.div`
   width: 25%;
   text-align: center;
-  padding-left: 5.6rem;
-  padding-right: 5.6rem;
+  padding-left: 5.8rem;
+  padding-right: 5.8rem;
+  max-width: 350px;
 `;
 
 const StyledIcon = styled.div`

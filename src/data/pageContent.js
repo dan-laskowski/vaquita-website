@@ -72,7 +72,7 @@ const pageContent = {
   howItWorks: {
     name: `howItWorks`,
     heading: `How it works`,
-    paragraph: ``,
+    paragraph: `Get started with easy 4 steps`,
     background: theme.color.lightBlue,
     color: theme.color.offWhite,
     steps: [

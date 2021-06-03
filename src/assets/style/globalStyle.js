@@ -35,12 +35,6 @@ ul li h2, ul li p, ul li::marker {
   }
 }
 
-#app {
-  h1 {
-    font-size:4.6rem;
-    text-align:center;
-  }
-}
 
 .horizontal {
   display: flex;
@@ -57,6 +51,10 @@ ul li h2, ul li p, ul li::marker {
   justify-content: center;
   margin-top:6rem;
   max-width: 1200px;
+}
+
+.features {
+  color: ${({ theme }) => theme.color.navy};
 }
 
 .steps {

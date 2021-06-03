@@ -1,29 +1,47 @@
 import React from "react";
 import styled from "styled-components";
-import { Subheading } from "../atoms/headings";
+import { Heading, Subheading } from "../atoms/headings";
 
-const StyledListItem = styled.li`
-  color: ${({ theme }) => theme.color.offWhite};
-  margin-left: 9%;
-  margin-bottom: 16px;
-  width: 400px;
-  h2,
-  ::marker {
-    font-family: ${({ theme }) => theme.font.family.primary};
-    margin-bottom: 4px;
-    font-size: 2.4rem;
+const StyledWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  padding-left: 5.8rem;
+  padding-right: 5.8rem;
+`;
+
+const StyledIcon = styled.div`
+  svg {
+    width: 96px !important;
+    height: 96px !important;
   }
-  p {
-    font-size: 1.4rem;
+  svg path {
+    fill: ${({ theme }) => theme.color.lightBlue};
   }
 `;
 
-const Feature = ({ heading, paragraph }) => {
+const StyledHeading = styled(Heading)`
+  color: ${({ theme }) => theme.color.lightBlue};
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  margin-bottom: 16px;
+  margin-top: 6rem;
+`;
+
+const StyledParagraph = styled(Subheading)`
+  color: ${({ theme }) => theme.color.lightBlue};
+  font-size: 1.6rem;
+  line-height: 2rem;
+`;
+
+const Feature = ({ children, feature }) => {
   return (
-    <StyledListItem>
-      <Subheading>{heading}</Subheading>
-      <p>{paragraph}</p>
-    </StyledListItem>
+    <StyledWrapper>
+      <StyledIcon>{children}</StyledIcon>
+      <div className="text">
+        <StyledHeading>{feature.heading}</StyledHeading>
+        <StyledParagraph>{feature.paragraph}</StyledParagraph>
+      </div>
+    </StyledWrapper>
   );
 };
 
