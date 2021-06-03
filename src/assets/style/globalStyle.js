@@ -56,12 +56,14 @@ ul li h2, ul li p, ul li::marker {
   flex-wrap: wrap;
   justify-content: center;
   margin-top:6rem;
-  max-width:1200px;
+  max-width: 1200px;
 }
 
 .steps {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-top: 160px;
 }
 /* The actual timeline (the vertical ruler) */
 .timeline {

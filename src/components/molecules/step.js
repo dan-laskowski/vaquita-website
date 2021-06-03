@@ -1,24 +1,42 @@
 import React from "react";
 import styled from "styled-components";
-import { GatsbyImage } from "gatsby-plugin-image";
 import { Heading, Subheading } from "../atoms/headings";
 
 const StyledWrapper = styled.div`
   width: 25%;
+  text-align: center;
+  padding-left: 5.6rem;
+  padding-right: 5.6rem;
+`;
+
+const StyledIcon = styled.div`
+  svg {
+    width: 96px !important;
+    height: 96px !important;
+  }
+  svg path {
+    fill: ${({ theme }) => theme.color.offWhite};
+  }
 `;
 
 const StyledHeading = styled(Heading)`
   color: ${({ theme }) => theme.color.offWhite};
-  font-size: 3rem;
-  line-height: 4rem;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  margin-bottom: 16px;
+  margin-top: 6rem;
 `;
 
-const StyledParagraph = styled(Subheading)``;
+const StyledParagraph = styled(Subheading)`
+  color: ${({ theme }) => theme.color.offWhite};
+  font-size: 1.6rem;
+  line-height: 2rem;
+`;
 
-const Step = ({ image, step }) => {
+const Step = ({ children, step }) => {
   return (
     <StyledWrapper>
-      <GatsbyImage className="image" image={image} alt="feature" />
+      <StyledIcon>{children}</StyledIcon>
       <StyledHeading>{step.heading}</StyledHeading>
       <StyledParagraph>{step.paragraph}</StyledParagraph>
     </StyledWrapper>
