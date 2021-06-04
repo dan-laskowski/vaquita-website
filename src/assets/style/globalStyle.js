@@ -40,10 +40,16 @@ ul li h2, ul li p, ul li::marker {
   display: flex;
   flex-direction: row;
   align-items: center;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
 }
 
 .horizontal > * {
   margin:4rem;
+  @media only screen and (max-width: 1200px) {
+    margin: 0;
+  }
 }
 .members {
   display: flex;
@@ -56,6 +62,9 @@ ul li h2, ul li p, ul li::marker {
 .features {
   color: ${({ theme }) => theme.color.navy};
   margin-top:6rem;
+  @media only screen and (max-width: 1050px) {
+   margin-bottom:6rem;
+  }
 }
 
 .steps {
@@ -63,6 +72,7 @@ ul li h2, ul li p, ul li::marker {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 160px;
+  margin-bottom: 6rem;
 }
 /* The actual timeline (the vertical ruler) */
 .timeline {

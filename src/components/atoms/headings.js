@@ -21,6 +21,19 @@ const StyledHeading = styled.h1`
     animation: move 6s linear infinite;
     color: ${({ theme }) => theme.color.orange};
   }
+  @media only screen and (max-width: 1250px) {
+    font-size: 4.4rem;
+    line-height: 4.6rem;
+  }
+  @media only screen and (max-width: 1035px) {
+    font-size: 3.4rem;
+    line-height: 3.6rem;
+    text-align: center;
+  }
+  @media only screen and (max-width: 415px) {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
   @keyframes move {
     from {
       background-position: 0 66%;

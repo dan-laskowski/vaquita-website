@@ -7,7 +7,12 @@ const StyledWrapper = styled.div`
   align-items: center;
   padding-left: 5.8rem;
   padding-right: 5.8rem;
-  max-width: 560px;
+  width: 560px;
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 `;
 
 const StyledIcon = styled.div`
@@ -19,6 +24,14 @@ const StyledIcon = styled.div`
   svg path {
     fill: ${({ theme }) => theme.color.lightBlue};
   }
+  @media only screen and (max-width: 500px) {
+    margin: 1rem 1rem 0 1rem;
+  }
+  @media only screen and (max-width: 370px) {
+    svg {
+      display: none;
+    }
+  }
 `;
 
 const StyledHeading = styled(Heading)`
@@ -26,6 +39,9 @@ const StyledHeading = styled(Heading)`
   font-size: 2rem;
   line-height: 2.2rem;
   margin-bottom: 1rem;
+  @media only screen and (max-width: 1035px) {
+    text-align: left;
+  }
 `;
 
 const StyledParagraph = styled(Subheading)`

@@ -11,11 +11,11 @@ const theme = {
       secondary: `'Libre Franklin', sans-serif`,
     },
     size: {
-      m: `2.4rem`,
+      m: `2rem`,
       xxl: `6.4rem`,
     },
     lineHeight: {
-      m: `3rem`,
+      m: `2.8rem`,
       xxl: `6.6rem`,
     },
     weight: {

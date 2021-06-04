@@ -13,6 +13,29 @@ const StyledSection = styled.section`
   h1 {
     text-transform: none;
   }
+  @media only screen and (max-width: 1501px) {
+    padding: 3rem;
+
+    .image {
+      width: 50% !important;
+    }
+    .image img {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 1050px) {
+    .image {
+      width: 75% !important;
+      margin-top: 10rem;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    padding: 2rem;
+    .image {
+      width: 90% !important;
+      margin-top: 6rem;
+    }
+  }
 `;
 
 const PageSection = ({
