@@ -25,7 +25,7 @@ const StyledIcon = styled.div`
     fill: ${({ theme }) => theme.color.lightBlue};
   }
   @media only screen and (max-width: 500px) {
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem 2rem 0 1rem;
   }
   @media only screen and (max-width: 370px) {
     svg {
