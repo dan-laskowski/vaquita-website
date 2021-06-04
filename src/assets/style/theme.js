@@ -12,7 +12,7 @@ const theme = {
     },
     size: {
       m: `2.4rem`,
-      xxl: `7.2rem`,
+      xxl: `6.4rem`,
     },
     lineHeight: {
       m: `3rem`,

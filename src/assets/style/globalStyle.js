@@ -55,6 +55,7 @@ ul li h2, ul li p, ul li::marker {
 
 .features {
   color: ${({ theme }) => theme.color.navy};
+  margin-top:6rem;
 }
 
 .steps {

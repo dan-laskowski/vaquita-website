@@ -4,9 +4,11 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const StyledDate = styled.h2`
+  font-size: 1.2rem;
   margin-right: 20px;
   margin-bottom: 14px;
   margin-left: 26px;
+  text-transform: uppercase;
   white-space: nowrap;
   align-self: flex-start;
   color: ${({ theme }) => theme.color.navy};
@@ -14,7 +16,7 @@ const StyledDate = styled.h2`
 const StyledEventName = styled(Heading)`
   font-family: ${({ theme }) => theme.font.family.primary};
   font-size: 3rem;
-  line-height: 4rem;
+  line-height: 3.6rem;
   color: ${({ theme }) => theme.color.offWhite};
   margin-right: 20px;
   margin-left: 26px;
@@ -25,7 +27,7 @@ const StyledEventName = styled(Heading)`
 const StyledParagraph = styled(Subheading)`
   margin-left: 26px;
   font-size: 1.6rem;
-  line-height: 2.8rem;
+  line-height: 2.6rem;
   max-width: none;
   color: ${({ theme }) => theme.color.navy};
 `;

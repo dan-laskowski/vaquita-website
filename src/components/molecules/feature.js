@@ -7,12 +7,14 @@ const StyledWrapper = styled.div`
   align-items: center;
   padding-left: 5.8rem;
   padding-right: 5.8rem;
+  max-width: 560px;
 `;
 
 const StyledIcon = styled.div`
+  margin: 1rem 3rem 0 3rem;
   svg {
-    width: 96px !important;
-    height: 96px !important;
+    width: 48px !important;
+    height: 48px !important;
   }
   svg path {
     fill: ${({ theme }) => theme.color.lightBlue};
@@ -21,16 +23,16 @@ const StyledIcon = styled.div`
 
 const StyledHeading = styled(Heading)`
   color: ${({ theme }) => theme.color.lightBlue};
-  font-size: 2.2rem;
-  line-height: 2.8rem;
-  margin-bottom: 16px;
-  margin-top: 6rem;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
 `;
 
 const StyledParagraph = styled(Subheading)`
   color: ${({ theme }) => theme.color.lightBlue};
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: 24px;
 `;
 
 const Feature = ({ children, feature }) => {
