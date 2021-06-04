@@ -24,6 +24,7 @@ const StyledHeading = styled.h1`
   @media only screen and (max-width: 1250px) {
     font-size: 4.4rem;
     line-height: 4.6rem;
+    margin-bottom: 10px;
   }
   @media only screen and (max-width: 1035px) {
     font-size: 3.4rem;

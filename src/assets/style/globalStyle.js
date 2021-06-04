@@ -72,7 +72,18 @@ ul li h2, ul li p, ul li::marker {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 160px;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
+  @media only screen and (max-width: 1380px) {
+    margin-top: 140px;
+  }
+  @media only screen and (max-width: 1260px) {
+    margin-top: 120px;
+  }
+  @media only screen and (max-width: 930px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
 }
 /* The actual timeline (the vertical ruler) */
 .timeline {
