@@ -28,13 +28,14 @@ const InfoBox = styled.div`
 const MemberName = styled.h3`
   font-size: 2rem;
   margin-top: 2.4rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 `;
 const MemberPosition = styled.p`
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 1.6rem;
+  font-weight: bold;
   text-transform: uppercase;
-  color: rgb(141, 151, 173);
+  color: ${({ theme }) => theme.color.lightBlue};
 `;
 const MemberTitle = styled.p`
   font-size: 1.6rem;
