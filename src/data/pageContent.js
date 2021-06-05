@@ -8,7 +8,7 @@ const pageContent = {
       <span>water</span>,
       " quality measured by technology of tommorow",
     ],
-    paragraph: `We developed water quality monitoring system that predicts what will happen in the environment. It is your chance to finally stay proactive to changes in the environment. Interested? Sign up to our beta program and learn more! `,
+    paragraph: `We developed a quality monitoring system that predicts what will happen in a water reservoir. It is your chance to finally stay proactive to changes in the environment. Interested? Sign up to our beta program and learn more!`,
     background: theme.color.navy,
     color: theme.color.offWhite,
   },
@@ -104,27 +104,36 @@ const pageContent = {
       {
         name: `Emilio Asensi`,
         position: `CEO`,
-        title: `MSc in`,
+        title: `MSc in Automation & Organizational Leadership for Sustainability. Ensuring never lose sight of our vision.`,
       },
       {
         name: `Nour Akel`,
         position: `Technical Lead`,
-        title: `MSc in`,
+        title: `MSc in Electrical Power Engineering. Making sure our hardware is always functional and packed with top notch technology.`,
       },
       {
         name: `Vijaya Sekhar`,
         position: `Software Lead`,
-        title: `PhD in`,
+        title: `PhD in Heat Transfer. Managing and developing our software system so it always keeps our client up to speed.`,
       },
       {
         name: `Dominik Wudarczyk`,
         position: `HR Lead`,
-        title: `MSc in Entrepreneurship and Innovation`,
+        title: `MSc in Entrepreneurship and Innovation. Constantly scouting for new clients and business opportunities.`,
       },
       {
         name: `Mysterious Stranger`,
         position: `CEO`,
-        title: `Check available opportunities and join our team!`,
+        title: [
+          "Check available opportunities and ",
+          <a
+            href="https://thehub.io/client/startups/vaquita-technologies"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            join our team!
+          </a>,
+        ],
       },
     ],
   },

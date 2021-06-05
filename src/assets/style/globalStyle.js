@@ -56,7 +56,7 @@ ul li h2, ul li p, ul li::marker {
   flex-wrap: wrap;
   justify-content: center;
   margin-top:6rem;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 
 .features {

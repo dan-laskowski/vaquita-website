@@ -6,45 +6,52 @@ import linkedin from "../../assets/images/linkedin.svg";
 const MemberWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-content: center;
-  width: 236px;
+  width: 285px;
   color: ${({ theme }) => theme.color.navy};
   .image {
     margin: 0 auto;
-    width: 200px;
+    width: 255px;
+  }
+  .linkedin {
+    left: 0;
   }
   margin: 4rem;
 `;
 const InfoBox = styled.div`
   margin: 12px 6px;
   text-align: center;
+  max-width: 260px;
 `;
 
 const MemberName = styled.h3`
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-top: 2.4rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
 `;
 const MemberPosition = styled.p`
   font-size: 1.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
   color: rgb(141, 151, 173);
 `;
 const MemberTitle = styled.p`
   font-size: 1.6rem;
+  line-height: 2.4rem;
   color: rgb(141, 151, 173);
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
+  text-align: left;
 `;
 
-const Member = ({ member, image }) => {
+const Member = ({ member, image, link }) => {
   return (
     <MemberWrapper>
       <div className="image">
         <GatsbyImage
           image={image}
-          width={200}
-          height={200}
+          width={360}
+          height={360}
           loading="lazy"
           alt="circle"
         />
@@ -53,13 +60,16 @@ const Member = ({ member, image }) => {
         <MemberName>{member.name}</MemberName>
         <MemberPosition>{member.position}</MemberPosition>
         <MemberTitle>{member.title}</MemberTitle>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={linkedin} width="18" alt="linkedin logo" />
-        </a>
+        {link && (
+          <a
+            className="linkedin"
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedin} width="18" alt="linkedin logo" />
+          </a>
+        )}
       </InfoBox>
     </MemberWrapper>
   );
