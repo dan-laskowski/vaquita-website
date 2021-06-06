@@ -11,6 +11,21 @@ const StyledSection = styled.section`
   div {
     width: 50%;
   }
+  @media only screen and (max-width: 950px) {
+    min-height: 670px;
+    max-height: 800px;
+  }
+  @media only screen and (max-width: 880px) {
+    flex-direction: column;
+    div {
+      width: 100%;
+    }
+    .map-wrapper iframe {
+      min-width: 100%;
+      height: 100vw;
+      min-height: 450px;
+    }
+  }
   .form-wrapper {
     display: flex;
     flex-direction: column;
@@ -21,6 +36,10 @@ const StyledSection = styled.section`
     }
     h2 {
       margin-bottom: 76px;
+    }
+
+    @media only screen and (max-width: 880px) {
+      padding-bottom: 4rem;
     }
   }
 `;

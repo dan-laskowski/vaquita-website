@@ -173,7 +173,7 @@ const pageContent = {
   faq: {
     name: `faq`,
     heading: "FAQ",
-    paragraph: `Lorem ipsum dolor sit amet, consectetur adipiscing.`,
+    paragraph: `How can we help you?`,
     background: theme.color.offWhite,
     color: theme.color.navy,
     faq: [
