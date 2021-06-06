@@ -43,6 +43,13 @@ ul li h2, ul li p, ul li::marker {
   }
  
 }
+section > h1 {
+  @media only screen and (max-width: 500px) {
+    font-size: 3.4rem !important;
+    line-height: 3.8rem !important;
+    text-align: center;
+  }
+}
 
 #achievements {
   h1 {
