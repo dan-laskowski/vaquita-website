@@ -16,14 +16,12 @@ const StyledButton = styled.button`
   transition: 0.1s ease-in;
   margin-right: 14px;
   cursor: pointer;
-  &:hover {
-    /* border: none;
-    color: ${({ primary, theme }) =>
-      primary ? theme.color.orange : theme.color.navy};
-    transition: 0.1s ease-in; */
-  }
   span {
     font-size: 17px;
+  }
+  @media only screen and (max-width: 500px) {
+    min-width: unset;
+    padding: 0 22px;
   }
 `;
 

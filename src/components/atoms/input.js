@@ -12,6 +12,10 @@ const StyledInput = styled.input`
   color: ${({ theme }) => theme.color.navy};
   border: none;
   background: ${({ theme }) => theme.color.offWhite};
+  @media only screen and (max-width: 500px) {
+    min-width: unset;
+    padding: 0 22px;
+  }
 `;
 
 const Input = ({ ...props }) => {

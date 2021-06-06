@@ -55,10 +55,12 @@ const StyledSection = styled.section`
       h2 {
         font-size: 1.4rem;
       }
+      padding-left: 0;
+      padding-right: 0;
     }
     @media only screen and (max-width: 360px) {
       h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 3rem;
       }
       h2 {
@@ -79,6 +81,10 @@ const StyledSection = styled.section`
     margin-bottom: 1.4rem;
     padding: 0 46px;
     border-radius: 28px;
+    @media only screen and (max-width: 500px) {
+      min-width: unset;
+      padding: 0 22px;
+    }
   }
 
   button {

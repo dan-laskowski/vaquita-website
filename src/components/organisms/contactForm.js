@@ -41,6 +41,9 @@ const StyledButton = styled(Button)`
     width: 100%;
     max-width: 520px;
   }
+  @media only screen and (max-width: 500px) {
+    min-width: unset;
+  }
 `;
 
 const ContactForm = () => {
