@@ -55,7 +55,7 @@ ul li h2, ul li p, ul li::marker {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top:6rem;
+  margin-top:8rem;
   max-width: 1600px;
 }
 

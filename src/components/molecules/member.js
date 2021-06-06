@@ -6,23 +6,33 @@ import linkedin from "../../assets/images/linkedin.svg";
 const MemberWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-content: center;
   width: 285px;
+  margin: 4rem;
   color: ${({ theme }) => theme.color.navy};
-  .image {
+  .avatar {
     margin: 0 auto;
     width: 255px;
   }
   .linkedin {
     left: 0;
   }
-  margin: 4rem;
+
+  @media only screen and (max-width: 415px) {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    .avatar {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
 `;
+
 const InfoBox = styled.div`
   margin: 12px 6px;
   text-align: center;
-  max-width: 260px;
+  /* max-width: 260px; */
 `;
 
 const MemberName = styled.h3`
@@ -43,12 +53,16 @@ const MemberTitle = styled.p`
   color: rgb(141, 151, 173);
   margin-bottom: 1.4rem;
   text-align: left;
+  @media only screen and (max-width: 415px) {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
 `;
 
 const Member = ({ member, image, link }) => {
   return (
     <MemberWrapper>
-      <div className="image">
+      <div className="avatar">
         <GatsbyImage
           image={image}
           width={360}
