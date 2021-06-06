@@ -56,6 +56,15 @@ const StyledSection = styled.section`
         font-size: 1.4rem;
       }
     }
+    @media only screen and (max-width: 360px) {
+      h1 {
+        font-size: 1.8rem;
+        line-height: 3rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
   }
 
   form {
