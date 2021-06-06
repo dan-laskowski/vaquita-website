@@ -8,7 +8,7 @@ const StyledWrapper = styled.div`
   padding-left: 5.8rem;
   padding-right: 5.8rem;
   width: 560px;
-  @media only screen and (max-width: 560px) {
+  @media only screen and (max-width: 580px) {
     width: auto;
   }
 

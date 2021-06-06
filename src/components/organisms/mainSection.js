@@ -44,6 +44,9 @@ const StyledSection = styled.section`
         text-align: left;
       }
     }
+    @media only screen and (max-width: 600px) {
+      margin: 3rem;
+    }
   }
 
   form {
