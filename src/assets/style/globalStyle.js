@@ -32,6 +32,13 @@ ul li h2, ul li p, ul li::marker {
 #achievements {
   h1 {
     margin-bottom: 22rem;
+    @media only screen and (max-width:1035px) {
+      margin-bottom: 11rem;
+    }
+  }
+  @media only screen and (max-width: 990px) {
+    padding-left:1rem;
+    padding-right: 1rem;
   }
 }
 

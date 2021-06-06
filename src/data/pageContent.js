@@ -148,25 +148,25 @@ const pageContent = {
         date: "March 2020",
         name: "Company Established",
         text:
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          "We officially registered Vaquita Technologies in Sweden as ‘Aktiebolag’ (limited liability company). Our office is based in Ideon Incubator – one of the best technical workspaces in the southern part of Sweden. We took our company name from an endangered species to constantly remember our goal, which is to protect and make our planet better for everyone.",
       },
       {
         date: "June 2020",
         name: "Fully functional prototype completed",
         text:
-          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita.",
+          "After few months of constant work, we completed our first fully functional prototype: the Alpha VAQ 1. Monitoring station powered by solar and wind energy, that is capable to measure temperature, Ph and turbidity. We placed it in a river on the outskirts of Lund and monitored it for several months to verify its performance and adjust it accordingly.",
       },
       {
         date: "December 2020",
         name: "First major round of funding secured",
         text:
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+          "At the end of 2020 we had been greeted with a Christmas gift beyond our expectations – a verification grant of 150 000 SEK from Ideon Innovation, to help us further develop our product. This funding round helped us tremendously in building new prototypes and further improving our technology.",
       },
       {
         date: "March 2021",
         name: "Sign-off for three pilot projects",
         text:
-          "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et.",
+          "Few months in 2021 we officially went into collaboration with three major stakeholders within the Swedish water industry. Each of the projects had been signed to last till the end of 2021 and target different market segments to ensure we properly scout various business opportunities.",
       },
     ],
   },
@@ -179,25 +179,28 @@ const pageContent = {
     faq: [
       {
         question: "Do you ship your station(s) internationally? ",
-        answer: `International shipping can be discussed upon request.`,
+        answer: `We do but at this moment we tend to prioritize EU based clients due to the ongoing COVID-19 pandemic. International shipping can be discussed upon request.`,
       },
       {
         question: "Can you come and install the station(s) for me?",
-        answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...`,
+        answer: `We cannot. We do not offer installation services, but provide each user with extensive yet simple manual how to set up the station on their own.`,
       },
       {
         question: "My station(s) does not work, what do I do?",
-        answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...`,
+        answer: [
+          `If your station does not work, please contact our technical team as soon as possible so we might assist you further. Please direct your inquiries directly to `,
+          <a href="mailto:nour.akel@vaqtech.com">Nour</a>,
+        ],
       },
       {
         question:
           "I wanted to place your station close to a lake where there is no electricity – will it still work?",
-        answer: `Lorem ipsum dolor sit amet, consecte di emo adipiscing elit...`,
+        answer: `It will! But you will have to ensure that the station is placed in correct conditions, such as being fully submerged or exposed to sunlight.`,
       },
       {
         question:
           "I forgot to cancel my subscription for the forecasting platform, what should I do?",
-        answer: `Lorem ipsum dolor sit amet, consecte di emo adipiscing elit...`,
+        answer: `You can cancel your subscription anytime trough your user profile, underneath the tab ‘Subscription’.`,
       },
     ],
   },

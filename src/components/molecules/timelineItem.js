@@ -23,6 +23,10 @@ const StyledEventName = styled(Heading)`
   margin-bottom: 14px;
   align-self: flex-start;
   max-width: none;
+  @media only screen and (max-width: 990px) {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+  }
 `;
 const StyledParagraph = styled(Subheading)`
   margin-left: 26px;
@@ -30,6 +34,10 @@ const StyledParagraph = styled(Subheading)`
   line-height: 2.6rem;
   max-width: none;
   color: ${({ theme }) => theme.color.navy};
+  @media only screen and (max-width: 990px) {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
 `;
 
 const SteplineItem = ({ date, name, text, index }) => (
