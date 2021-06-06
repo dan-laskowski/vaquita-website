@@ -18,6 +18,9 @@ const StyledWrapper = styled.header`
   background-color: ${({ theme }) => theme.color.offWhite};
   backdrop-filter: blur(10px);
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 4px;
+  @media only screen and (max-width: 310px) {
+    height: 120px;
+  }
 `;
 
 const StyledHeader = styled.div`
@@ -27,11 +30,28 @@ const StyledHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   max-width: 1400px;
+  @media only screen and (max-width: 1520px) {
+    margin: 0 4rem;
+  }
+  @media only screen and (max-width: 370px) {
+    margin: 0 1rem;
+  }
+  @media only screen and (max-width: 310px) {
+    flex-direction: column;
+    justify-content: space-around;
+  }
 `;
+
+const StyledImg = styled.img``;
 
 const StyledButton = styled(CTAButton)`
   margin: 0;
   border: 1px solid orange;
+  @media only screen and (max-width: 520px) {
+    padding: 8px 16px;
+    min-width: unset;
+    height: 42px;
+  }
 `;
 
 const Header = () => {
@@ -47,7 +67,7 @@ const Header = () => {
   return (
     <StyledWrapper sticky={sticky}>
       <StyledHeader>
-        <img src={logo} width="165" alt="vaquita logo" />
+        <StyledImg src={logo} width="165" alt="vaquita logo" />
         <StyledButton>Join beta</StyledButton>
       </StyledHeader>
     </StyledWrapper>

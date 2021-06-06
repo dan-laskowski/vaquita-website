@@ -62,6 +62,15 @@ const IndexPage = () => {
           )
         }
       }
+      stranger: file(name: { in: "stranger" }) {
+        childImageSharp {
+          gatsbyImageData(
+            width: 255
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
+      }
       vision: file(name: { in: "vision" }) {
         childImageSharp {
           gatsbyImageData(placeholder: NONE, formats: [AUTO, WEBP, AVIF])
@@ -216,7 +225,7 @@ const IndexPage = () => {
             member={pageContent.team.members[3]}
           />
           <Member
-            image={data.vijaya.childImageSharp.gatsbyImageData}
+            image={data.stranger.childImageSharp.gatsbyImageData}
             member={pageContent.team.members[4]}
           />
         </div>
