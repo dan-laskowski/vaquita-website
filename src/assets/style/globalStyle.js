@@ -42,6 +42,17 @@ ul li h2, ul li p, ul li::marker {
   }
 }
 
+#faq {
+  @media only screen and (max-width: 1050px) {
+    .subheading {
+      margin-bottom: 0;
+
+}
+
+  }
+ 
+}
+
 
 .horizontal {
   display: flex;
@@ -50,7 +61,9 @@ ul li h2, ul li p, ul li::marker {
   @media only screen and (max-width: 1050px) {
     flex-direction: column;
   }
+ 
 }
+
 
 .horizontal > * {
   margin:4rem;
@@ -92,6 +105,7 @@ ul li h2, ul li p, ul li::marker {
     margin-top: 60px;
   }
 }
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;

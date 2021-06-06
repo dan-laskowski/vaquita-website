@@ -225,15 +225,17 @@ const IndexPage = () => {
         <Timeline achievements={pageContent.achievements.achievements} />
       </PageSection>
       <PageSection section={pageContent.faq}>
-        <section className="horizontal">
-          <lottie-player
-            src="https://assets6.lottiefiles.com/packages/lf20_G5TBf4.json"
-            background="transparent"
-            speed="1"
-            style={{ width: "600px", height: "600px" }}
-            loop
-            autoplay
-          />
+        <section className="horizontal faq">
+          <div className="lottie">
+            <lottie-player
+              src="https://assets6.lottiefiles.com/packages/lf20_G5TBf4.json"
+              background="transparent"
+              speed="1"
+              style={{ width: "100%", height: "100%", maxWidth: "600px" }}
+              loop
+              autoplay
+            />
+          </div>
           <FaqBox faq={pageContent.faq.faq} />
         </section>
       </PageSection>

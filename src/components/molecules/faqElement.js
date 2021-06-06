@@ -31,6 +31,10 @@ const StyledQuestion = styled.h2`
   font-size: 2rem;
   margin: 18px 6px 12px 10px;
   user-select: none;
+  @media only screen and (max-width: 640px) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
 `;
 const StyledAnswer = styled.h2`
   font-family: ${({ theme }) => theme.font.family.secondary};
