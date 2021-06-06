@@ -27,6 +27,21 @@ ul li h2, ul li p, ul li::marker {
   h1 {
     margin-top:0;
   }
+  h1, h2 {
+    color: ${({ theme }) => theme.color.offWhite};
+  }
+  .features {
+    h1 {
+      margin-top: 6vh;
+    }
+  }
+  .features.solution {
+    margin-left: 6rem;
+    @media only screen and (max-width:840px) {
+      margin-left: 0;
+    }
+  }
+ 
 }
 
 #achievements {
@@ -46,11 +61,8 @@ ul li h2, ul li p, ul li::marker {
   @media only screen and (max-width: 1050px) {
     .subheading {
       margin-bottom: 0;
-
-}
-
+    }
   }
- 
 }
 
 
@@ -63,6 +75,7 @@ ul li h2, ul li p, ul li::marker {
   }
  
 }
+
 
 
 .horizontal > * {

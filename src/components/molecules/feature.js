@@ -13,6 +13,18 @@ const StyledWrapper = styled.div`
     padding-left: 0;
     padding-right: 0;
   }
+  .number {
+    font-family: ${({ theme }) => theme.font.family.primary};
+    color: ${({ theme }) => theme.color.lightBlue};
+    background: ${({ theme }) => theme.color.offWhite};
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 2.4rem;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: -1.6rem;
+  }
 `;
 
 const StyledIcon = styled.div`

@@ -97,7 +97,20 @@ const IndexPage = () => {
             image={data.solution.childImageSharp.gatsbyImageData}
             alt="water sensors"
           />
-          <div className="features"></div>
+          <div className="features solution">
+            <Feature feature={pageContent.solution.features[0]}>
+              <span className="number">1</span>
+            </Feature>
+            <Feature feature={pageContent.solution.features[1]}>
+              <span className="number">2</span>
+            </Feature>
+            <Feature feature={pageContent.solution.features[2]}>
+              <span className="number">3</span>
+            </Feature>
+            <Feature feature={pageContent.solution.features[3]}>
+              <span className="number">4</span>
+            </Feature>
+          </div>
         </section>
       </PageSection>
       <PageSection section={pageContent.app}>
