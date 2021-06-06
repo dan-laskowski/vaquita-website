@@ -47,6 +47,15 @@ const StyledSection = styled.section`
     @media only screen and (max-width: 600px) {
       margin: 3rem;
     }
+    @media only screen and (max-width: 480px) {
+      h1 {
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
   }
 
   form {
@@ -69,6 +78,12 @@ const StyledSection = styled.section`
 
   .buttons {
     margin-top: 34px;
+  }
+  .image {
+    @media only screen and (max-width: 1100px) {
+      margin-top: 8rem;
+      margin-bottom: 4rem;
+    }
   }
 `;
 

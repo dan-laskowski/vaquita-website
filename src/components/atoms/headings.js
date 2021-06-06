@@ -29,9 +29,9 @@ const StyledHeading = styled.h1`
   @media only screen and (max-width: 1035px) {
     font-size: 3.4rem;
     line-height: 3.6rem;
-    text-align: center;
+    /* text-align: center; */
   }
-  @media only screen and (max-width: 415px) {
+  @media only screen and (max-width: 480px) {
     font-size: 2.4rem;
     line-height: 2.6rem;
   }
@@ -53,6 +53,10 @@ const StyledSubheading = styled.h2`
   margin-bottom: 64px;
   max-width: 640px;
   color: ${({ color }) => color};
+  @media only screen and (max-width: 480px) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 `;
 
 export const Heading = ({ children, ...props }) => (

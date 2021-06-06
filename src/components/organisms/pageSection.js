@@ -30,7 +30,7 @@ const StyledSection = styled.section`
     }
   }
   @media only screen and (max-width: 500px) {
-    padding: 2rem;
+    padding: 3rem;
     .image {
       width: 90% !important;
       margin-top: 6rem;
