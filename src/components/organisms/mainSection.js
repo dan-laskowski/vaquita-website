@@ -74,6 +74,7 @@ const StyledSection = styled.section`
 
   button {
     margin-right: 0;
+    min-width: unset;
   }
 
   .buttons {
@@ -83,6 +84,9 @@ const StyledSection = styled.section`
     @media only screen and (max-width: 1100px) {
       margin-top: 8rem;
       margin-bottom: 4rem;
+    }
+    @media only screen and (max-width: 370px) {
+      width: 86%;
     }
   }
 `;

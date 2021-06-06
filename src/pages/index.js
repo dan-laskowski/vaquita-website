@@ -93,10 +93,12 @@ const IndexPage = () => {
       </svg>
       <PageSection section={pageContent.solution}>
         <section className="horizontal">
-          <GatsbyImage
-            image={data.solution.childImageSharp.gatsbyImageData}
-            alt="water sensors"
-          />
+          <div className="image">
+            <GatsbyImage
+              image={data.solution.childImageSharp.gatsbyImageData}
+              alt="water sensors"
+            />
+          </div>
           <div className="features solution">
             <Feature feature={pageContent.solution.features[0]}>
               <span className="number">1</span>
