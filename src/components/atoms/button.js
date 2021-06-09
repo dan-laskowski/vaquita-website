@@ -6,7 +6,7 @@ const StyledButton = styled.button`
   border-radius: 28px;
   height: 46px;
   min-width: ${({ primary }) => (primary ? `unset` : `148px;`)};
-  padding: ${({ primary }) => (primary ? `0` : `0 46px`)};
+  padding: ${({ primary }) => (primary ? `0 10px` : `0 46px`)};
   color: ${({ theme }) => theme.color.navy};
   border: none;
   background: ${({ primary, theme }) =>
