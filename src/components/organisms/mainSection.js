@@ -147,7 +147,12 @@ const MainSection = ({
           {children}
         </div>
         <div className="image">
-          <GatsbyImage className="image" image={image} alt="hero" />
+          <GatsbyImage
+            loading="eager"
+            className="image"
+            image={image}
+            alt="hero"
+          />
         </div>
       </div>
     </StyledSection>

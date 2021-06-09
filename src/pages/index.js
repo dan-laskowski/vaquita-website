@@ -29,7 +29,7 @@ const IndexPage = () => {
       nour: file(name: { in: "nour" }) {
         childImageSharp {
           gatsbyImageData(
-            width: 255
+            width: 510
             placeholder: BLURRED
             formats: [AUTO, WEBP, AVIF]
           )
@@ -38,7 +38,7 @@ const IndexPage = () => {
       emilio: file(name: { in: "emilio" }) {
         childImageSharp {
           gatsbyImageData(
-            width: 255
+            width: 510
             placeholder: BLURRED
             formats: [AUTO, WEBP, AVIF]
           )
@@ -47,7 +47,7 @@ const IndexPage = () => {
       vijaya: file(name: { in: "vijaya" }) {
         childImageSharp {
           gatsbyImageData(
-            width: 255
+            width: 510
             placeholder: BLURRED
             formats: [AUTO, WEBP, AVIF]
           )
@@ -56,7 +56,7 @@ const IndexPage = () => {
       dominik: file(name: { in: "dominik" }) {
         childImageSharp {
           gatsbyImageData(
-            width: 255
+            width: 510
             placeholder: BLURRED
             formats: [AUTO, WEBP, AVIF]
           )
@@ -65,7 +65,7 @@ const IndexPage = () => {
       stranger: file(name: { in: "stranger" }) {
         childImageSharp {
           gatsbyImageData(
-            width: 255
+            width: 510
             placeholder: BLURRED
             formats: [AUTO, WEBP, AVIF]
           )
