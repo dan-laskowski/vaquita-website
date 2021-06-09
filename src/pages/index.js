@@ -11,21 +11,12 @@ import Feature from "../components/molecules/feature";
 import Timeline from "../components/organisms/timeline";
 import FaqBox from "../components/organisms/FaqBox";
 import ContactSection from "../components/organisms/contactSection";
+import solution from "../assets/images/solution.svg";
 import app from "../assets/images/app.svg";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query PicturesQuery {
-      hero: file(name: { in: "hero" }) {
-        childImageSharp {
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-        }
-      }
-      solution: file(name: { in: "solution" }) {
-        childImageSharp {
-          gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-        }
-      }
       nour: file(name: { in: "nour" }) {
         childImageSharp {
           gatsbyImageData(
@@ -80,10 +71,7 @@ const IndexPage = () => {
   `);
   return (
     <Layout>
-      <MainSection
-        section={pageContent.hero}
-        image={data.hero.childImageSharp.gatsbyImageData}
-      />
+      <MainSection section={pageContent.hero} />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#222151"
@@ -93,11 +81,8 @@ const IndexPage = () => {
       </svg>
       <PageSection section={pageContent.solution}>
         <section className="horizontal">
-          <div className="image">
-            <GatsbyImage
-              image={data.solution.childImageSharp.gatsbyImageData}
-              alt="water sensors"
-            />
+          <div className="image solution">
+            <img src={solution} alt="water sensors" />
           </div>
           <div className="features solution">
             <Feature feature={pageContent.solution.features[0]}>

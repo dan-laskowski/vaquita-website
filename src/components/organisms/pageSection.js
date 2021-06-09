@@ -17,7 +17,7 @@ const StyledSection = styled.section`
     padding: 3rem;
 
     .image {
-      width: 50% !important;
+      width: 50%;
     }
     .image img {
       width: 100%;
@@ -25,7 +25,7 @@ const StyledSection = styled.section`
   }
   @media only screen and (max-width: 1050px) {
     .image {
-      width: 75% !important;
+      width: 75%;
       margin-top: 10rem;
     }
   }

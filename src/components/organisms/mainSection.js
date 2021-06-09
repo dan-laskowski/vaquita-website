@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
-import { GatsbyImage } from "gatsby-plugin-image";
 import addToMailChimp from "gatsby-plugin-mailchimp";
 import CTAButton from "../atoms/button";
 import { Heading, Subheading } from "../atoms/headings";
@@ -162,8 +161,6 @@ const StyledSection = styled.section`
 
 const MainSection = ({
   section: { background, name, color, heading, paragraph },
-  children,
-  image,
 }) => {
   const [email, setEmail] = useState("");
   const [submitText, setSubmitText] = useState("Sign up to beta");
@@ -195,16 +192,9 @@ const MainSection = ({
             />
             <CTAButton>{submitText}</CTAButton>
           </form>
-          {children}
         </div>
         <div className="image">
           <img src={hero} className="image" alt="hero" />
-          {/* <GatsbyImage
-            loading="eager"
-            className="image"
-            image={image}
-            alt="hero"
-          /> */}
         </div>
       </div>
     </StyledSection>

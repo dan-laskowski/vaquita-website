@@ -41,6 +41,12 @@ ul li h2, ul li p, ul li::marker {
       margin-left: 0;
     }
   }
+  div.image.solution img {
+    width: 460px;
+    @media only screen and (max-width:840px) {
+     width:100%;
+    }
+  }
  
 }
 section > h1 {
