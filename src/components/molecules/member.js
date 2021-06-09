@@ -61,7 +61,7 @@ const MemberTitle = styled.p`
 
 const Member = ({ member, image, link }) => {
   return (
-    <MemberWrapper>
+    <MemberWrapper key={member.name}>
       <div className="avatar">
         <GatsbyImage
           image={image}

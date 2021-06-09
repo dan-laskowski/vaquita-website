@@ -209,22 +209,27 @@ const IndexPage = () => {
       <PageSection section={pageContent.team}>
         <div className="members">
           <Member
+            key={pageContent.team.members[0].name}
             image={data.emilio.childImageSharp.gatsbyImageData}
             member={pageContent.team.members[0]}
           />
           <Member
+            key={pageContent.team.members[1].name}
             image={data.nour.childImageSharp.gatsbyImageData}
             member={pageContent.team.members[1]}
           />
           <Member
+            key={pageContent.team.members[2].name}
             image={data.vijaya.childImageSharp.gatsbyImageData}
             member={pageContent.team.members[2]}
           />
           <Member
+            key={pageContent.team.members[3].name}
             image={data.dominik.childImageSharp.gatsbyImageData}
             member={pageContent.team.members[3]}
           />
           <Member
+            key={pageContent.team.members[4].name}
             image={data.stranger.childImageSharp.gatsbyImageData}
             member={pageContent.team.members[4]}
           />
