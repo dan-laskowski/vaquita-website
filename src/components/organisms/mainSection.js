@@ -5,6 +5,7 @@ import addToMailChimp from "gatsby-plugin-mailchimp";
 import CTAButton from "../atoms/button";
 import { Heading, Subheading } from "../atoms/headings";
 import Input from "../atoms/input";
+import hero from "../../assets/images/hero.svg";
 
 const StyledSection = styled.section`
   display: flex;
@@ -17,11 +18,16 @@ const StyledSection = styled.section`
     @media only screen and (max-width: 1100px) {
       flex-direction: column-reverse;
     }
+    @media only screen and (max-width: 720px) {
+      width: 100%;
+    }
   }
   .text {
-    width: 50%;
+    width: 40%;
+    min-width: 500px;
     max-width: 600px;
     margin: 6rem;
+    margin-right: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,28 +41,59 @@ const StyledSection = styled.section`
       max-width: 420px;
     }
     @media only screen and (max-width: 1100px) {
-      width: auto;
-      max-width: 416px;
-      margin-top: 0;
+      width: 80%;
+      max-width: unset;
+      margin-top: 7rem;
       padding-bottom: 6rem;
       h1 {
         margin-top: 0;
         text-align: left;
       }
+      h2 {
+        width: 88%;
+        margin-bottom: 36px;
+        max-width: unset;
+      }
     }
-    @media only screen and (max-width: 600px) {
-      margin: 3rem;
-    }
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 945px) {
       h1 {
-        font-size: 2.4rem;
-        line-height: 3.5rem;
+        font-size: 4.4rem;
+        line-height: 5.4rem;
       }
       h2 {
         font-size: 1.4rem;
       }
       padding-left: 0;
       padding-right: 0;
+    }
+    @media only screen and (max-width: 870px) {
+      margin-left: 0;
+      margin-right: 0;
+      h1 {
+        font-size: 3.8rem;
+        line-height: 4.8rem;
+      }
+    }
+    @media only screen and (max-width: 755px) {
+      h1 {
+        font-size: 3.6rem;
+        line-height: 4.6rem;
+      }
+      h2 {
+        width: 100%;
+      }
+    }
+    @media only screen and (max-width: 720px) {
+      width: 90%;
+      h2 {
+        width: 90%;
+      }
+    }
+    @media only screen and (max-width: 635px) {
+      h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
     }
     @media only screen and (max-width: 360px) {
       h1 {
@@ -73,6 +110,17 @@ const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
     max-width: 414px;
+    @media only screen and (max-width: 1100px) {
+      align-self: center;
+      width: 80%;
+      max-width: 506px;
+    }
+    @media only screen and (max-width: 870px) {
+      align-self: flex-start;
+    }
+    @media only screen and (max-width: 790px) {
+      width: 100%;
+    }
   }
 
   input {
@@ -96,9 +144,23 @@ const StyledSection = styled.section`
     margin-top: 34px;
   }
   .image {
+    width: 700px;
+
+    @media only screen and (max-width: 1410px) {
+      width: 600px;
+    }
+    @media only screen and (max-width: 1240px) {
+      width: 500px;
+    }
     @media only screen and (max-width: 1100px) {
-      margin-top: 8rem;
-      margin-bottom: 4rem;
+      display: flex;
+      justify-content: center;
+      margin-top: calc(70px + 2rem);
+      width: 80%;
+    }
+    @media only screen and (max-width: 720px) {
+      width: 90%;
+      margin-top: 70px;
     }
     @media only screen and (max-width: 370px) {
       width: 86%;
@@ -141,18 +203,16 @@ const MainSection = ({
             />
             <CTAButton>{submitText}</CTAButton>
           </form>
-          {/* <CTAButton primary>
-            Show more <span>⤳</span>
-          </CTAButton> */}
           {children}
         </div>
         <div className="image">
-          <GatsbyImage
+          <img src={hero} className="image" alt="hero" />
+          {/* <GatsbyImage
             loading="eager"
             className="image"
             image={image}
             alt="hero"
-          />
+          /> */}
         </div>
       </div>
     </StyledSection>
