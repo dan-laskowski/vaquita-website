@@ -19,7 +19,7 @@ const StyledWrapper = styled.header`
   background-color: ${({ theme }) => theme.color.offWhite};
   backdrop-filter: blur(10px);
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 4px;
-  @media only screen and (max-width: 310px) {
+  @media only screen and (max-width: 555px) {
     height: 120px;
   }
 `;
@@ -37,9 +37,12 @@ const StyledHeader = styled.div`
   @media only screen and (max-width: 370px) {
     margin: 0 1rem;
   }
-  @media only screen and (max-width: 310px) {
+  @media only screen and (max-width: 555px) {
     flex-direction: column;
     justify-content: space-around;
+    .buttons {
+      margin-top: 10px;
+    }
   }
 `;
 
@@ -69,9 +72,9 @@ const Header = () => {
     <StyledWrapper sticky={sticky}>
       <StyledHeader>
         <StyledImg src={logo} width="165" alt="vaquita logo" />
-        <div>
+        <div className="buttons">
           <Link to="hero" smooth>
-            <StyledButton>Join beta</StyledButton>{" "}
+            <StyledButton>Join beta</StyledButton>
           </Link>
           <Link to="contact" smooth>
             <CTAButton primary>Contact us</CTAButton>
