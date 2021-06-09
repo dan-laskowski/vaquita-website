@@ -21,6 +21,9 @@ const StyledSection = styled.section`
     @media only screen and (max-width: 720px) {
       width: 100%;
     }
+    @media only screen and (max-width: 520px) {
+      justify-content: center;
+    }
   }
   .text {
     width: 40%;
@@ -75,6 +78,7 @@ const StyledSection = styled.section`
       }
     }
     @media only screen and (max-width: 755px) {
+      min-width: unset;
       h1 {
         font-size: 3.6rem;
         line-height: 4.6rem;
@@ -93,15 +97,6 @@ const StyledSection = styled.section`
       h1 {
         font-size: 3rem;
         line-height: 4rem;
-      }
-    }
-    @media only screen and (max-width: 360px) {
-      h1 {
-        font-size: 2rem;
-        line-height: 3rem;
-      }
-      h2 {
-        font-size: 1.2rem;
       }
     }
   }
@@ -161,9 +156,6 @@ const StyledSection = styled.section`
     @media only screen and (max-width: 720px) {
       width: 90%;
       margin-top: 70px;
-    }
-    @media only screen and (max-width: 370px) {
-      width: 86%;
     }
   }
 `;
