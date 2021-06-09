@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 import useScrollPosition from "../../utils/hooks/useScrollPosition";
 import logo from "../../assets/images/logo.svg";
 import CTAButton from "../atoms/button";
@@ -68,7 +69,14 @@ const Header = () => {
     <StyledWrapper sticky={sticky}>
       <StyledHeader>
         <StyledImg src={logo} width="165" alt="vaquita logo" />
-        <StyledButton>Join beta</StyledButton>
+        <div>
+          <Link to="hero" smooth>
+            <StyledButton>Join beta</StyledButton>{" "}
+          </Link>
+          <Link to="contact" smooth>
+            <CTAButton primary>Contact us</CTAButton>
+          </Link>
+        </div>
       </StyledHeader>
     </StyledWrapper>
   );

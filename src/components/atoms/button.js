@@ -5,12 +5,10 @@ const StyledButton = styled.button`
   font-size: 1.6rem;
   border-radius: 28px;
   height: 46px;
-  min-width: 148px;
-  padding: 0 46px;
-  color: ${({ primary, theme }) =>
-    primary ? theme.color.orange : theme.color.navy};
-  border: ${({ primary, theme }) =>
-    primary ? `1px solid ${theme.color.orange}` : `none`};
+  min-width: ${({ primary }) => (primary ? `unset` : `148px;`)};
+  padding: ${({ primary }) => (primary ? `0` : `0 46px`)};
+  color: ${({ theme }) => theme.color.navy};
+  border: none;
   background: ${({ primary, theme }) =>
     primary ? ` none` : theme.color.orange};
   transition: 0.1s ease-in;
