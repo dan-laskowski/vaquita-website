@@ -7,7 +7,7 @@ const Map = ({ ...props }) => {
   return (
     <StyledMap
       as="iframe"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d944.89881006048!2d13.241146362537847!3d55.7174821503516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46539656aaee4557%3A0xc7491b5b948f5ff7!2sStralsundsv%C3%A4gen%2029%2C%20224%2079%20Lund%2C%20Szwecja!5e0!3m2!1spl!2spl!4v1615805918171!5m2!1spl!2spl"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2247.683042391808!2d13.215237!3d55.711881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc4e1137b972a9033!2sIdeon%20Open%20AB!5e0!3m2!1sen!2spl!4v1623751019441!5m2!1sen!2spl"
       width="100%"
       title="map"
       height="100%"
