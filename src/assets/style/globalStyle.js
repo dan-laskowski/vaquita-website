@@ -132,6 +132,32 @@ section > h1 {
   }
 }
 
+.CookieConsent {
+  font-size: 1.6rem;
+  /* border-top: 1px solid white; */
+  background: lightgray;
+}
+
+#rcc-confirm-button, #rcc-decline-button {
+  font-size: 1.6rem;
+  border-radius: 28px !important;
+  height: 42px;
+  min-width: 128px;
+  padding: 0 26px !important;
+  border: none;
+  transition: 0.1s ease-in;
+  margin-left: 0 !important;
+  cursor: pointer;
+}
+
+#rcc-confirm-button {
+  background-color: #69B968 !important;
+  color: white !important;
+}
+#rcc-decline-button {
+  background-color: #F66E72 !important;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;

@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import useScrollPosition from "../../utils/hooks/useScrollPosition";
 import logo from "../../assets/images/logo.svg";
 import CTAButton from "../atoms/button";
+import CookieConsent from "react-cookie-consent";
 
 const StyledWrapper = styled.header`
   display: flex;
@@ -69,19 +70,33 @@ const Header = () => {
     [sticky]
   );
   return (
-    <StyledWrapper sticky={sticky}>
-      <StyledHeader>
-        <StyledImg src={logo} width="165" alt="vaquita logo" />
-        <div className="buttons">
-          <Link to="hero" smooth>
-            <StyledButton>Join beta</StyledButton>
-          </Link>
-          <Link to="contact" smooth>
-            <CTAButton primary>Contact us</CTAButton>
-          </Link>
-        </div>
-      </StyledHeader>
-    </StyledWrapper>
+    <>
+      <StyledWrapper sticky={sticky}>
+        <StyledHeader>
+          <StyledImg src={logo} width="165" alt="vaquita logo" />
+          <div className="buttons">
+            <Link to="hero" smooth>
+              <StyledButton>Join beta</StyledButton>
+            </Link>
+            <Link to="contact" smooth>
+              <CTAButton primary>Contact us</CTAButton>
+            </Link>
+          </div>
+        </StyledHeader>
+      </StyledWrapper>
+      {!/CookieBanner=(\w.*);?/.exec(document.cookie) && (
+        <CookieConsent
+          debug
+          cookieName="CookieBanner"
+          enableDeclineButton
+          onDecline={() => {
+            window.location.href = `http://google.com`;
+          }}
+        >
+          Ths website uses cookies.
+        </CookieConsent>
+      )}
+    </>
   );
 };
 
