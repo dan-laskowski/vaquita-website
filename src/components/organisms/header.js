@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { window, document } from "browser-monads";
 import { Link } from "react-scroll";
 import useScrollPosition from "../../utils/hooks/useScrollPosition";
 import logo from "../../assets/images/logo.svg";
