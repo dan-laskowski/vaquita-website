@@ -6,7 +6,7 @@ const pageContent = {
     name: `hero`,
     heading: [
       <span>water</span>,
-      " quality measured by technology of tommorow",
+      " quality measured by technology of tomorrow",
     ],
     paragraph: `We developed a quality monitoring system that predicts what will happen in a water reservoir. It is your chance to finally stay proactive to changes in the environment. Interested? Sign up to our beta program and learn more!`,
     background: theme.color.navy,
