@@ -163,7 +163,7 @@ const MainSection = ({
   section: { background, name, color, heading, paragraph },
 }) => {
   const [email, setEmail] = useState("");
-  const [submitText, setSubmitText] = useState("Sign up to beta");
+  const [submitText, setSubmitText] = useState("Sign up for beta");
   const formEl = useRef(null);
 
   const handleSubmit = e => {

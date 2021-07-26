@@ -89,12 +89,13 @@ const Header = () => {
         <CookieConsent
           debug
           cookieName="CookieBanner"
+          buttonText="I agree"
           enableDeclineButton
           onDecline={() => {
             window.location.href = `http://google.com`;
           }}
         >
-          Ths website uses cookies.
+          This website uses cookies.
         </CookieConsent>
       )}
     </>

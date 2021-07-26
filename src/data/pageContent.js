@@ -8,24 +8,24 @@ const pageContent = {
       <span>water</span>,
       " quality measured by technology of tomorrow",
     ],
-    paragraph: `We developed a quality monitoring system that predicts what will happen in a water reservoir. It is your chance to finally stay proactive to changes in the environment. Interested? Sign up to our beta program and learn more!`,
+    paragraph: `We have developed a quality monitoring system that predicts what will happen in a water reservoir. It is your chance to finally stay proactive to changes in the environment. Interested? Sign up for our beta program and learn more!`,
     background: theme.color.navy,
     color: theme.color.offWhite,
   },
   solution: {
     name: `solution`,
     heading: `Our solution`,
-    paragraph: `Learn more about our system developed with newest technology available on the market.`,
+    paragraph: `Learn more about our system, which is developed with the newest technology available on the market.`,
     background: theme.color.lightBlue,
     color: theme.color.offWhite,
     features: [
       {
         heading: `Custom parameters`,
-        paragraph: `We adjust the parameters in the station, based on the client’s needs and feedback.`,
+        paragraph: `We adjust the parameters in the station based on the client’s needs and feedback.`,
       },
       {
         heading: `Optical sensor technology`,
-        paragraph: `Our sensors react to changes in the environment with a delay of less than 0.1 second.`,
+        paragraph: `Our sensors react to changes in the environment with a delay of less than 0.1 seconds.`,
       },
       {
         heading: `Deployable everywhere`,
@@ -33,7 +33,7 @@ const pageContent = {
       },
       {
         heading: `Visual pollution free`,
-        paragraph: `Sustainable masking technology let us blend our station in the environment so it does not disturb the wildlife.`,
+        paragraph: `Sustainable masking technology let us blend our station into the environment, so it does not disturb the wildlife.`,
       },
     ],
   },
@@ -46,14 +46,14 @@ const pageContent = {
     features: [
       {
         heading: `Full station integration made with one click`,
-        paragraph: `Log in via our website to your account, and access all your water quality data.`,
+        paragraph: `Log in to your account via our website and access all your water quality data.`,
       },
       {
         heading: `Simple to operate`,
-        paragraph: `Our platform can be used by both experienced professionals and individuals that just started their journey with water quality.`,
+        paragraph: `Our platform can be used by both experienced professionals and individuals, who have just started their journey with water quality.`,
       },
       {
-        heading: `Available on your desktop and mobile device (iOS and Android)`,
+        heading: `Available on your desktop and mobile devices (iOS and Android)`,
         paragraph: `Log in from any platform you want.`,
       },
       {
@@ -72,17 +72,17 @@ const pageContent = {
   howItWorks: {
     name: `howItWorks`,
     heading: `How it works`,
-    paragraph: `Get started with easy 4 steps`,
+    paragraph: `Get started with 4 easy steps`,
     background: theme.color.lightBlue,
     color: theme.color.offWhite,
     steps: [
       {
-        heading: `Place a station in a water reservoir`,
-        paragraph: `Make sure the station is fully submerged`,
+        heading: `PPlace a station into a water reservoir`,
+        paragraph: `Make sure that the station is fully submerged`,
       },
       {
         heading: `Connect the station to the web `,
-        paragraph: `Wait for the light to turn green to indicate you successfully connected to the local network`,
+        paragraph: `Wait for the light to turn green to indicate that you have successfully connected to the local network`,
       },
       {
         heading: `Log in to our software platform `,
@@ -90,7 +90,7 @@ const pageContent = {
       },
       {
         heading: `Set notifications and enjoy! `,
-        paragraph: `In the settings menu choose an option how often would you like to receive alerts`,
+        paragraph: `In the settings menu, choose an option of how often would you like to receive alerts`,
       },
     ],
   },
@@ -104,7 +104,7 @@ const pageContent = {
       {
         name: `Emilio Asensi`,
         position: `CEO`,
-        title: `MSc in Automation & Organizational Leadership for Sustainability. Ensuring never lose sight of our vision.`,
+        title: `MSc in Automation & Organizational Leadership for Sustainability. Ensuring never losing sight of our vision.`,
       },
       {
         name: `Nour Akel`,
@@ -114,20 +114,20 @@ const pageContent = {
       {
         name: `Vijaya Sekhar`,
         position: `Software Lead`,
-        title: `PhD in Heat Transfer. Managing and developing our software system so it always keeps our client up to speed.`,
+        title: `PhD in Heat Transfer. Managing and developing our software system, so it will always keep our client up to speed.`,
       },
       {
         name: `Dominik Wudarczyk`,
-        position: `HR Lead`,
+        position: `BUSINESS DEVELOPMENT LEAD`,
         title: `MSc in Entrepreneurship and Innovation. Constantly scouting for new clients and business opportunities.`,
       },
       {
         name: `Mysterious Stranger`,
-        position: `CEO`,
+        position: `YOUR NEXT DREAM ROLE`,
         title: [
-          "Check available opportunities and ",
+          "Check out available opportunities and ",
           <a
-            href="https://thehub.io/client/startups/vaquita-technologies"
+            href="https://thehub.io/startups/vaquita-technologies"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -148,25 +148,25 @@ const pageContent = {
         date: "March 2020",
         name: "Company Established",
         text:
-          "We officially registered Vaquita Technologies in Sweden as ‘Aktiebolag’ (limited liability company). Our office is based in Ideon Incubator – one of the best technical workspaces in the southern part of Sweden. We took our company name from an endangered species to constantly remember our goal, which is to protect and make our planet better for everyone.",
+          "We officially registered Vaquita Technologies in Sweden an ‘Aktiebolag’ (limited liability company). Our office is based in Ideon Incubator – one of the best technical workspaces in the southern part of Sweden. We took our company name from an endangered species in order to constantly remember our goal, which is to protect and make our planet better for everyone.",
       },
       {
         date: "June 2020",
         name: "Fully functional prototype completed",
         text:
-          "After few months of constant work, we completed our first fully functional prototype: the Alpha VAQ 1. Monitoring station powered by solar and wind energy, that is capable to measure temperature, Ph and turbidity. We placed it in a river on the outskirts of Lund and monitored it for several months to verify its performance and adjust it accordingly.",
+          "After few months of constant work, we completed our first fully functional prototype: The Alpha VAQ 1. Monitoring station powered by solar and wind energy, that is capable of measuring temperature, Ph and turbidity. We placed it in a river on the outskirts of Lund and monitored it for several months to verify its performance and adjust it accordingly.",
       },
       {
         date: "December 2020",
         name: "First major round of funding secured",
         text:
-          "At the end of 2020 we had been greeted with a Christmas gift beyond our expectations – a verification grant of 150 000 SEK from Ideon Innovation, to help us further develop our product. This funding round helped us tremendously in building new prototypes and further improving our technology.",
+          "At the end of 2020, we had been greeted with a Christmas gift beyond our expectations – a verification grant of 150 000 SEK from Ideon Innovation to help us continuing developing our product. This funding round helped us tremendously in building new prototypes and further improving our technology.",
       },
       {
         date: "March 2021",
         name: "Sign-off for three pilot projects",
         text:
-          "Few months in 2021 we officially went into collaboration with three major stakeholders within the Swedish water industry. Each of the projects had been signed to last till the end of 2021 and target different market segments to ensure we properly scout various business opportunities.",
+          "A few months in 2021, we officially went into collaboration with three major stakeholders within the Swedish water industry. Each of these projects had been signed to last until the end of 2021 and they target different market segments to ensure that we properly scout various business opportunities.",
       },
     ],
   },
@@ -179,7 +179,7 @@ const pageContent = {
     faq: [
       {
         question: "Do you ship your station(s) internationally? ",
-        answer: `We do but at this moment we tend to prioritize EU based clients due to the ongoing COVID-19 pandemic. International shipping can be discussed upon request.`,
+        answer: `We do, but at this moment we tend to prioritize EU based clients due to the ongoing COVID-19 pandemic. International shipping can be discussed upon request.`,
       },
       {
         question: "Can you come and install the station(s) for me?",
@@ -188,19 +188,19 @@ const pageContent = {
       {
         question: "My station(s) does not work, what do I do?",
         answer: [
-          `If your station does not work, please contact our technical team as soon as possible so we might assist you further. Please direct your inquiries directly to `,
+          `If your station do(es) not work, please contact our technical team as soon as possible, so we might be able to assist you further. Please direct your inquiries directly to `,
           <a href="mailto:nour.akel@vaqtech.com">Nour</a>,
         ],
       },
       {
         question:
-          "I wanted to place your station close to a lake where there is no electricity – will it still work?",
-        answer: `It will! But you will have to ensure that the station is placed in correct conditions, such as being fully submerged or exposed to sunlight.`,
+          "I want to place your station close to a lake where there is no electricity – will it still work?",
+        answer: `It will! But you will have to ensure that the station is placed under the correct conditions, such as being fully submerged or exposed to sunlight.`,
       },
       {
         question:
-          "I forgot to cancel my subscription for the forecasting platform, what should I do?",
-        answer: `You can cancel your subscription anytime trough your user profile, underneath the tab ‘Subscription’.`,
+          "I forgot to cancel my subscription for the forecasting platform – what should I do?",
+        answer: `You can cancel your subscription anytime through your user profile underneath the tab ‘Subscription’.`,
       },
     ],
   },

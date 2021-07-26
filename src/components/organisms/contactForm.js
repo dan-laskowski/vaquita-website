@@ -81,7 +81,7 @@ const ContactForm = () => {
       <StyledInput
         aria-label="email"
         type="email"
-        placeholder="Email"
+        placeholder="E-mail"
         maxLength="100"
         name="reply_to"
         required
