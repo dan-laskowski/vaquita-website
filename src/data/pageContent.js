@@ -77,7 +77,7 @@ const pageContent = {
     color: theme.color.offWhite,
     steps: [
       {
-        heading: `PPlace a station into a water reservoir`,
+        heading: `Place a station into a water reservoir`,
         paragraph: `Make sure that the station is fully submerged`,
       },
       {
