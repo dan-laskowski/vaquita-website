@@ -2,7 +2,7 @@ import React from "react";
 import theme from "../assets/style/theme";
 import malmo from "../assets/images/malmo.svg";
 import almi from "../assets/images/almi.svg";
-import ideon from "../assets/images/ideon.svg";
+import ideon from "../assets/images/ideon";
 import vinnova from "../assets/images/vinnova.svg";
 
 const pageContent = {
