@@ -42,9 +42,16 @@ const PageSection = ({
   section: { background, name, color, heading, paragraph },
   children,
   center,
+  ...props
 }) => {
   return (
-    <StyledSection center={center} id={name} key={name} background={background}>
+    <StyledSection
+      center={center}
+      id={name}
+      key={name}
+      background={background}
+      {...props}
+    >
       <Heading color={color}>{heading}</Heading>
       {paragraph && <Subheading color={color}>{paragraph}</Subheading>}
       {children}

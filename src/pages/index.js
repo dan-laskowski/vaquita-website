@@ -1,9 +1,9 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import MainSection from "../components/organisms/mainSection";
 import PageSection from "../components/organisms/pageSection";
+import VisionSection from "../components/organisms/visionSection";
 import pageContent from "../data/pageContent";
 import Member from "../components/molecules/member";
 import Step from "../components/molecules/step";
@@ -198,14 +198,10 @@ const IndexPage = () => {
           </Step>
         </div>
       </PageSection>
-      <PageSection section={pageContent.vision} center>
-        <section className="horizontal">
-          <GatsbyImage
-            image={data.vision.childImageSharp.gatsbyImageData}
-            alt="hand with the planet"
-          />
-        </section>
-      </PageSection>
+      <VisionSection
+        content={pageContent.vision}
+        image={data.vision.childImageSharp.gatsbyImageData}
+      ></VisionSection>
       <PageSection section={pageContent.team}>
         <div className="members">
           <Member

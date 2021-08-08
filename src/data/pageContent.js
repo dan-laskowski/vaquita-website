@@ -1,5 +1,9 @@
 import React from "react";
 import theme from "../assets/style/theme";
+import malmo from "../assets/images/malmo.svg";
+import almi from "../assets/images/almi.svg";
+import ideon from "../assets/images/ideon.svg";
+import vinnova from "../assets/images/vinnova.svg";
 
 const pageContent = {
   hero: {
@@ -63,11 +67,53 @@ const pageContent = {
     ],
   },
   vision: {
-    name: `vision`,
-    heading: `Our vision`,
-    paragraph: `We believe it is our responsibility to ensure the survival of water ecosystems worldwide. UN SDGs are in the core of our business`,
-    background: theme.color.navy,
-    color: theme.color.orange,
+    values: {
+      name: `values`,
+      heading: `Values`,
+      paragraph: `The United Nations Sustainable Development Goals are at the core of our startup. They serve as a lighthouse to our business, ensuring that we stay on the correct path of maintaining a sustainably driven future for all our stakeholders.`,
+      background: theme.color.navy,
+      color: theme.color.orange,
+    },
+    vision: {
+      name: `vision`,
+      heading: `Vision`,
+      paragraph: `Our goal is simple. We want to create an environment where everyone will have access to healthy waters all around the globe at any given time. Only then can we secure a better future for our planet and future generations.`,
+      background: theme.color.navy,
+      color: theme.color.orange,
+    },
+    support: {
+      name: `support`,
+      heading: `Support`,
+      paragraph: `We were able to take our business vision further due to the financial support we received from different institutions, such as: `,
+      background: theme.color.orange,
+      color: theme.color.navy,
+      founders: [
+        {
+          name: `Malmo University (MAU Innovation)`,
+          date: `01.02.2020`,
+          amount: `65 000`,
+          logo: malmo,
+        },
+        {
+          name: `Almi Verification Grant`,
+          date: `27.07.2020`,
+          amount: `50 000`,
+          logo: almi,
+        },
+        {
+          name: `Ideon Innovation Verification Grant`,
+          date: `01.12.2020`,
+          amount: `150 000`,
+          logo: ideon,
+        },
+        {
+          name: `Vinnova Innovative Startups Step 1`,
+          date: `01.04.2021`,
+          amount: `300 000`,
+          logo: vinnova,
+        },
+      ],
+    },
   },
   howItWorks: {
     name: `howItWorks`,
