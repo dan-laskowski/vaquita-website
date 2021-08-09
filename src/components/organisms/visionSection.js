@@ -15,11 +15,37 @@ const StyledSection = styled.section`
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
+  @media only screen and (max-width: 1375px) {
+    flex-direction: column;
+    h1 {
+      font-size: 4.4rem;
+      line-height: 4.6rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      line-height: ${({ theme }) => theme.font.lineHeight.m};
+      font-size: ${({ theme }) => theme.font.size.m};
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 2.4rem;
+      line-height: 2.6rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+  }
 `;
 
 const StyledContainer = styled(PageSection)`
   width: 50%;
   padding: 14rem 3vw;
+  @media only screen and (max-width: 1375px) {
+    width: 100%;
+    padding: 3rem;
+  }
 `;
 
 const ValuesBlock = styled.div`
