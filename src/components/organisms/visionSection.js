@@ -53,6 +53,13 @@ const ValuesBlock = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media only screen and (max-width: 480px) {
+    .gatsby-image-wrapper {
+      width: 50%;
+      min-width: 120px;
+    }
+  }
 `;
 
 const VisionSection = ({ content, image, ...props }) => {

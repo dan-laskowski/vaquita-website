@@ -57,8 +57,9 @@ const Logo = styled.img`
   width: 100%;
   align-self: center;
   @media only screen and (max-width: 480px) {
-    width: 60%;
+    width: 36%;
     margin-bottom: 24px;
+    min-width: 110px;
   }
 `;
 
